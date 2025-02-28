@@ -1,0 +1,6 @@
+PROJECT_ID = "projet-genai"
+INSTANCE = "medical-db"
+REGION = "europe-west1"
+DATABASE = "media-db"
+DB_USER = "postgres"
+TABLE_NAME = "medical_data"

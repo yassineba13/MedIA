@@ -1,0 +1,16 @@
+streamlit
+fastapi
+uvicorn
+requests
+pydantic
+python-dotenv
+google-generativeai
+langchain
+langchain-google-genai
+langchain-community
+langchain-core
+google-cloud-storage
+langchain
+python-magic
+sqlalchemy
+langchain_google_cloud_sql_pg
