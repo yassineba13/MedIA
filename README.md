@@ -6,7 +6,7 @@ It uses a **Retrieval-Augmented Generation (RAG)** system to provide accurate me
 ---
 
 ## ✨ Features  
-- 🔍 **Vector Search**: Uses `textembedding-gecko@latest` to find the most relevant medical questions.  
+- 🔍 **Vector Search**: Uses `text-embedding-004` to find the most relevant medical questions.  
 - 📚 **Knowledge Base**: Integrated with **PostgreSQL + pgvector** to store embeddings and metadata.  
 - ⚡ **FastAPI & Streamlit**: REST API for AI + user interface.  
 - ☁ **Cloud Deployment**: Runs on **Google Cloud SQL & Vertex AI**.  
