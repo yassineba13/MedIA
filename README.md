@@ -46,7 +46,7 @@ Before running the application, make sure to configure **Google Cloud** by creat
 
 ### 1️⃣ - **Clone the Project**  
 ```bash
-git clone (https://github.com/yassineba13/MedIA.git)
+git clone https://github.com/yassineba13/MedIA.git
 cd MEDAI
 ```  
 
