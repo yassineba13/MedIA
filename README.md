@@ -88,11 +88,6 @@ pip install -r requirements.txt
 The creation of the table containing embeddings and metadata for medical questions is included in the project notebook (`notebook.ipynb`).  
 
 Run the notebook to automatically generate the table and insert the data.  
-
-See the image below for the detailed structure of the SQL table:  
-
-![table](images/table.png)  
-
 ---  
 
 ## 🚀 Usage  
