@@ -171,5 +171,5 @@ cython_debug/
 # PyPI configuration file
 .pypirc
 
-C:\Users\HP\MedIA\downloaded_files
-C:\Users\HP\MedIA\media
+
+media/

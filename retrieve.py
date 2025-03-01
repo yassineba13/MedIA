@@ -9,11 +9,15 @@ def get_relevant_documents(query: str, vector_store: PostgresVectorStore) -> lis
     )
     return retriever.invoke(query)
 
-def format_relevant_documents(documents: list[Document]) -> str:
+def get_format_relevant_documents(query: str, vector_store: PostgresVectorStore) -> str:
+    retriever = vector_store.as_retriever(
+        search_type="mmr",
+        search_kwargs={'k': 2, 'lambda_mult': 0.3}
+    )
+    documents =retriever.invoke(query)
     formatted_docs = []
-    for i, doc in enumerate(documents):
+    for doc in documents:
         formatted_doc = (
-            f"Question {i+1}: {doc.page_content}\n"
             f"Answer: {doc.metadata['answer']}\n"
             f"Source: {doc.metadata['source']}\n"
             f"Focus Area: {doc.metadata['focus_area']}\n"
@@ -30,7 +34,6 @@ if __name__ == '__main__':
     test_query = "What is fever?"
     documents = get_relevant_documents(test_query, vector_store)
     
-    # Ajoutons un print du score
     results = vector_store.similarity_search_with_score(test_query, k=1)
     if results:
         score = results[0][1]
