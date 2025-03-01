@@ -3,8 +3,8 @@ from typing import Dict, List
 import streamlit as st
 import requests
 
-HOST = "https://yba-api-180940196448.europe-west1.run.app"
-#HOST = "http://127.0.0.1:8501"
+#HOST = "https://yba-api-180940196448.europe-west1.run.app"
+HOST = "http://127.0.0.1:8501"
 
 # Set page config
 st.set_page_config(

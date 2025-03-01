@@ -15,3 +15,10 @@ python-magic
 sqlalchemy
 langchain_google_cloud_sql_pg
 langchain_google_vertexai
+pandas
+tqdm
+numpy
+scikit-learn
+sentence-transformers
+nltk
+rouge-score
